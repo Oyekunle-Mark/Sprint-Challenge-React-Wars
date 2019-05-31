@@ -25,5 +25,7 @@ module.exports = {
     'camelcase': 0,
     'react/jsx-one-expression-per-line': 0,
     'quotes': 0,
+    'import/no-named-as-default': 0,
+    'import/no-named-as-default-member': 0,
   },
 };
