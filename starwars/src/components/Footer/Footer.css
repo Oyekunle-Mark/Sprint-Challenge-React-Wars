@@ -1,0 +1,20 @@
+button {
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  background: rgb(39, 37, 37);
+  color: rgb(209, 209, 199);
+  border: 1px solid rgb(39, 37, 37);
+  border-radius: 5px;
+  margin: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(39, 37, 37);
+  background: rgb(209, 209, 199);
+}
+
+button:active {
+  transform: translateY(3px);
+}

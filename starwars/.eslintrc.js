@@ -27,5 +27,6 @@ module.exports = {
     'quotes': 0,
     'import/no-named-as-default': 0,
     'import/no-named-as-default-member': 0,
+    'react/button-has-type': 0
   },
 };

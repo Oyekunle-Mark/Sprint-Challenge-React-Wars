@@ -3,5 +3,12 @@
 }
 .Header {
   color: #443e3e;
+  background: rgb(209, 209, 199);
   text-shadow: 1px 1px 5px #fff;
+  margin: 0;
+  padding: 20px;
+  /* position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; */
 }
