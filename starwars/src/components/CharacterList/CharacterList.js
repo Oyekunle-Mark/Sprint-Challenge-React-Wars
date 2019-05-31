@@ -1,6 +1,6 @@
 import React from "react";
 import CharacterCard from "../CharacterCard/CharacterCard";
-import './CharacterList.css';
+import "./CharacterList.css";
 
 export default function CharacterList({ starwarsCharacterList }) {
   return (
