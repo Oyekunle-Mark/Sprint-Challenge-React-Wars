@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ContentLoader from "react-content-loader";
 import CharacterList from "./components/CharacterList/CharacterList";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
@@ -9,7 +10,8 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       previousPage: null,
-      nextPage: null
+      nextPage: null,
+      isLoading: true
     };
   }
 
@@ -24,7 +26,8 @@ class App extends Component {
         this.setState({
           starwarsChars: data.results,
           previousPage: data.previous,
-          nextPage: data.next
+          nextPage: data.next,
+          isLoading: false
         });
       })
       .catch(err => {
@@ -33,10 +36,16 @@ class App extends Component {
   };
 
   render() {
-    const { starwarsChars, previousPage, nextPage } = this.state;
+    const { starwarsChars, previousPage, nextPage, isLoading } = this.state;
+
+    if (isLoading)
+      return <ContentLoader type="instagram" width="100" height="100" />;
+
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <header>
+          <h1>React Wars</h1>
+        </header>
         <CharacterList starwarsCharacterList={starwarsChars} />
         <Footer
           prev={previousPage}
