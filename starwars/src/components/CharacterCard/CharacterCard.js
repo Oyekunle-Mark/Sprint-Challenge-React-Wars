@@ -1,4 +1,5 @@
 import React from "react";
+import './CharacterCard.css';
 
 export default function CharacterCard({
   name,
@@ -11,8 +12,8 @@ export default function CharacterCard({
 }) {
   return (
     <div className="character-card">
-      <h2>{name}</h2>
-      <h4>Personal Information</h4>
+      <h3>{name}</h3>
+      <h5>Personal Information</h5>
 
       <ul>
         <li>Born: {birth_year}</li>

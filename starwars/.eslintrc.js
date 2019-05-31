@@ -19,5 +19,11 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/prop-types': 0,
+    'react/jsx-filename-extension': 0,
+    'jsx-quotes': 0,
+    'camelcase': 0,
+    'react/jsx-one-expression-per-line': 0,
+    'quotes': 0,
   },
 };
