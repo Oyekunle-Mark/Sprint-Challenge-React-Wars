@@ -1,0 +1,37 @@
+.character-card {
+  width: 250px;
+  height: 300px;
+  margin: 30px;
+  background: #443e3e;
+  color: rgb(209, 209, 199);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.character-card h3 {
+  background: rgb(39, 37, 37);
+  margin: 0;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.character-card h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  margin-left: 20px;
+  color: black;
+}
+
+.character-card ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.character-card ul li {
+  margin: 10px 0;
+  text-transform: capitalize;
+  color: rgb(209, 209, 199);
+}
